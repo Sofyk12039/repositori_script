@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цикл</title>
+</head>
+<body><script>
+let i = 4;
+while (i) { // коли i стане = 0 , значення в дужках стане false і цикл зупиниться  
+alert( i );
+  i--;
+}
+let count = 0;
+for (count  = 0; count < 4; count++){
+  alert(count);
+}
+let sum = 0;
+while (true) {
+  let value = +prompt('Введіть число', '');
+  if (!value) break; 
+  sum += value;
+}
+alert( 'Сума: ' + sum );
+ 
+
+let num;
+do {
+  num = prompt("Введіть число, більше за 100?", 0);
+} while (num <= 100 && num!=null);
+if (num===null){
+	alert("До побачення!")
+}else{
+alert ("Ваше число: " + num)
+}/*
+let vch;
+do {
+  vch = prompt("Введіть число від 1 до 100 ", 0);
+} while ( vch <=62 && vch!=null||vch>=64  && vch!=null);
+
+
+
+
+if(vch >=64)
+
+  alert("chislo menshe");
+if(vch ===0-62)
+
+  alert("chislo bilshe");
+
+
+if(vch===63){
+alert ("tak ce chislo " + vch);
+}
+if(vch===null||vch>=100||vch===0)
+
+	alert("До побачення!");
+
+  */
+  </script>
+
+</body>
+</html>
