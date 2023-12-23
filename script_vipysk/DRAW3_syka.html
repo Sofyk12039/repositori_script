@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(180, 43, 226);">
+<p style="font-size: 1cm;">Намальовано з <'canvas'></p>
+
+
+    <canvas id="myCanvas" width="500px
+" height="450px"
+style="margin-left:30% ; margin-top: 8%; background-color: black;box-shadow: 0 0 10px,0 0 20px,0 0 30px, 0 0 40px
+ black;"></canvas>
+
+
+
+    <script>
+
+
+
+
+
+                let canvas = document.getElementById("myCanvas"), 
+                    cxt = canvas.getContext("2d");
+              
+                cxt.beginPath();
+                cxt.moveTo(30,100)
+                cxt.lineTo(50,50); 
+cxt.lineTo(250,50);
+cxt.lineTo(200,50) 
+cxt.lineTo(250, 100)
+cxt.lineTo(300,50)
+cxt.lineTo(450,50)
+cxt.lineTo(470,100)
+
+cxt.lineTo(250,400); 
+cxt.lineTo(251,400)
+
+
+cxt.fillStyle="red";
+cxt.fill();
+
+            </script>
+</body>
+</html>

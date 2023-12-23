@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style>
+    body{
+    background-color: black;
+      background-image: url(https://fons.pibig.info/uploads/posts/2023-05/1685503786_fons-pibig-info-p-relsi-sboku-1.jpg);
+    background-repeat: no-repeat;
+    }
+    #train {
+      margin-bottom: 20%;
+      position: relative;
+      cursor: pointer;
+      height: 500px;
+      width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <title>train animation</title>
+  <img id="train" src="https://flomaster.top/uploads/posts/2023-01/1673392941_flomaster-club-p-parovoz-s-vagonami-risunok-oboi-21.png">
+  <script>
+     train.onclick = function() {
+     let start = Date.now(); // зберегти час початку
+	let timer = setInterval(function() {
+        // обчислити скільки часу пройшло з opts.duration
+        let timePassed = Date.now() - start;
+        train.style.left = timePassed / 5 + 'px';
+        if (timePassed > 2000) clearInterval(timer);
+      }, 20);
+    }
+
+</script>
+</body>
+</html>
