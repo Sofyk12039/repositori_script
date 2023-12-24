@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+p{
+    background-color: yellow;
+    font-size: 1cm;
+    text-align: center;
+}
+</style>
+
+<body>
+
+
+    <script>
+        let luckyNumber = +prompt("введіть будь яке число і я скажу щасливе воно чи ні","")
+switch(luckyNumber){
+case 7:
+    document.writeln("<p>" +"це щасливе число, є символом удачі"+"<p>");
+    break;
+    case 13 :
+    document.writeln("<p>" +"це не щасливе число"+"<p>" )
+    break;
+    case 4:
+    document.writeln("<p>" +"це не щасливе число, в Китаї назва числа співзвучно зі словом смерть"+"<p>"  )
+    break;
+    default:
+    document.writeln("<p>" +"у цього  числа нема значення"+"<p>" )
+    
+}
+    </script>
+</body>
+</html>
